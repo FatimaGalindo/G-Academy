@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>G-Academy | Regístrate</title>
+        <link rel="stylesheet" href="./../css/styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <nav>
+                <a href="./../index.html" class="nav__logo">
+                    <img src="./../img/logo.png" alt="logo" />
+                </a>
+                <ul class="nav__list">
+                    <li>
+                        <a href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="./clases.html">Clases</a>
+                    </li>
+                    <li>
+                        <a href="./trabaja-con-nosotros.html">Trabaja con nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Regístrate</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="hero">
+                <h1 class="hero__title">Regístrate gratis</h1>
+                <p class="hero__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nibh vitae erat efficitur faucibus.
+                    Duis tincidunt, ex in mattis viverra.
+                </p>
+            </section>
+        </header>
+        <!--Contenido-->
+        <main>
+            <!--Sección: Formulario de registro-->
+            <section class="contact">
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input class="form__text" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required />
+                    <label for="apellido">Apellido</label>
+                    <input  class="form__text" type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required />
+                    <label for="correo">Correo electrónico</label>
+                    <input class="form__text" type="email" name="correo" id="correo" placeholder="Ingresa tu mail" required />
+                    <label for="celular">Celular</label>
+                    <input class="form__text" type="text" name="celular" id="celular" placeholder="Ingresa un número" required />
+                    <label for="eres">¿Quién eres?</label>
+                    <select name="eres" id="eres">
+                        <option value="padre-de-familia">Soy padre de familia</option>
+                        <option value="estudiante">Soy estudiante</option>
+                    </select>
+                    <label for="clave">Contraseña</label>
+                    <input class="form__text" type="password" name="clave" id="clave" placeholder="Ingresa tu clave" required />
+                    <input class="button" type="submit" value="Enviar" />
+                </form>
+            </section>
+            <!--Sección: Ubicación-->
+            <section>
+                <h2>Nos ubicamos en</h2>
+                <div style="width: 100%">
+                    <iframe
+                        width="100%"
+                        title="Ubicación"
+                        height="600"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Calle%20Estudiante,%201%20Lima,%20Per%C3%BA+(G-Academy)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        ><a href="https://www.gps.ie/car-satnav-gps/">Sat Navs</a></iframe
+                    >
+                </div>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <img class="footer__logo" src="./../img/logo.png" alt="logo" />
+            <ul class="footer__list">
+                <li>
+                    <a href="./../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./clases.html">Clases</a>
+                </li>
+                <li>
+                    <a href="#">Trabaja con nosotros</a>
+                </li>
+                <li>
+                    <a href="./registrate.html">Regístrate</a>
+                </li>
+            </ul>
+            <article class="footer__subscribe">
+                <h4 class="footer__subscribe__title">Suscríbete</h4>
+                <form class="footer__subscribe__form" action="">
+                    <input type="text" value="" placeholder="Ingresa tu correo" />
+                    <input class="button--white" type="button" value="Enviar" />
+                </form>
+                <div class="footer__subscribe__social">
+                    <a href="#"><img class="social" src="./../img/logo-facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img class="social" src="./../img/logo-instagram.png" alt="Instagram" /></a>
+                    <a href="#"><img class="social" src="./../img/logo-twitter.png" alt="Twitter" /></a>
+                </div>
+            </article>
+        </footer>
+    </body>
+</html>
