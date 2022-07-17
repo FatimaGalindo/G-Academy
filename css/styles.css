@@ -8,6 +8,25 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+@keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+
+  
 
 #grilla{
     display: grid;
@@ -42,6 +61,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: 2s appear ease-out;
 }
 
 .nav__logo img {
@@ -67,6 +87,7 @@ nav{
 .hero{
     margin-top:4em;
     overflow-wrap: normal;
+    animation: 2s appear ease-out;
 }
 
 .hero__title{
@@ -88,7 +109,13 @@ nav{
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.5s;
 }
+
+.button:hover{
+    background-color: #8bac28;
+}
+
 
 /*---MAIN---*/
 
@@ -110,15 +137,22 @@ main section h2{
 /*---FEATURES---*/
 
 .features__body{
-    margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
+    margin: 2em auto 0em;
 }
 
 .feature{
     text-align: center;
-    padding: 2em;
-    width: 33%;
+    padding: 1em;
+    margin: 1em;
+    width: 30%;
+    background-color: rgb(238, 237, 237);
+    border-radius:10px;
+}
+
+.feature:hover{
+    transform: scale(1.1)
 }
 
 .feature__img{
@@ -180,6 +214,10 @@ main section h2{
     width: 33%;
 }
 
+.testimonial:hover{
+    transform: scale(1.1)
+}
+
 .testimonial__img{
     width: 100px;
 }
@@ -205,6 +243,10 @@ main section h2{
     width: 33%;
     padding: 2em;
     text-align: center;
+}
+
+.teacher:hover{
+    transform: scale(1.1)
 }
 
 .teachers__title{
@@ -292,6 +334,11 @@ select {
     background-color: #e8f2c9;
 }
 
+.result:hover{
+    border: 1px solid #96ba2c;
+    background-color: #d9e3b9;
+}
+
 .result__img{
     border-radius: 50%;
     width:100px;
@@ -324,15 +371,22 @@ select {
 /*---BENEFITS---*/
 
 .benefits__body{
-    margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
+    margin: 2em auto 0em;
 }
 
 .benefit{
     text-align: center;
     padding: 1em;
-    width: 33%;
+    width: 30%;
+    margin: 1em;
+    background-color: rgb(238, 237, 237);
+    border-radius:10px;
+}
+
+.benefit:hover{
+    transform: scale(1.1)
 }
 
 .benefit__img{
