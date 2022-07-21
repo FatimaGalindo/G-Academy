@@ -5,36 +5,60 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>G-Academy | Tu mejor opción</title>
-        <link rel="stylesheet" href="./css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">     
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
     </head>
     <body>
         <div id="grilla">
             <!--Header-->
             <header>
-                <nav>
-                    <a href="#" class="nav__logo">
-                        <img src="./img/logo.png" alt="logo" />
-                    </a>
-                    <ul class="nav__list">
-                        <li>
-                            <a href="./pages/nosotros.html">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="./pages/clases.html">Clases</a>
-                        </li>
-                        <li>
-                            <a href="./pages/trabaja-con-nosotros.html">Trabaja con nosotros</a>
-                        </li>
-                        <li>
-                            <a href="./pages/registrate.html">Regístrate</a>
-                        </li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a href="#" class="navbar-brand nav__logo">
+                            <img src="./img/logo.png" alt="logo" />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse justify-content-end" id="navbarNav">
+                            <ul class="nav__list navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/clases.html">Clases</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/trabaja-con-nosotros.html">Trabaja con nosotros</a>
+                                </li>
+                                <li class="nav-item" >
+                                    <a class="nav-link" href="./pages/registrate.html">Regístrate</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
                 <section class="hero">
                     <h1 class="hero__title">Logra el éxito académico con G-Academy</h1>
                     <p class="hero__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis finibus felis, non tempor leo euismod laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed scelerisque nisl quis cursus mattis. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis finibus felis, non tempor
+                        leo euismod laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Sed scelerisque nisl quis cursus mattis.
                     </p>
                     <a href="./pages/clases.html" class="button">Busca tu clase</a>
                 </section>
@@ -42,79 +66,95 @@
             <!--Contenido-->
             <main>
                 <!--Sección: Caracteristicas-->
-                <section class="features">
+                <section class="features container-fluid">
                     <h2 class="features__title">Recibe una formación de calidad de forma personalizada</h2>
-                    <article class="features__body">
-                        <div class="feature">
-                            <img class="feature__img" src="./img/caracteristica.png" alt="Formación de calidad" />
-                            <h3 class="feature__title">Docentes con experiencia certificada</h3>
-                            <p class="feature__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam
-                                vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum, semper nunc
-                                quis, consequat arcu. 
-                            </p>
+                    <article class="row justify-content-center">
+                        <div class="col-lg-4 col-sm-6 col-xs-12 pt-4">
+                            <div class="feature h-100">
+                                <img class="feature__img" src="./img/caracteristica.png" alt="Formación de calidad" />
+                                <h3 class="feature__title">Docentes con experiencia certificada</h3>
+                                <p class="feature__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut
+                                    diam vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum,
+                                    semper nunc quis, consequat arcu.
+                                </p>
+                            </div>
                         </div>
-                        <div class="feature">
-                            <img class="feature__img" src="./img/caracteristica.png" alt="Precios accesibles" />
-                            <h3 class="feature__title">Precios accesibles para todos los cursos</h3>
-                            <p class="feature__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam
-                                vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum, semper nunc
-                                quis, consequat arcu. 
-                            </p>
+                        <div class="col-lg-4 col-sm-6 col-xs-12 pt-4">
+                            <div class="feature h-100">
+                                <img class="feature__img" src="./img/caracteristica.png" alt="Precios accesibles" />
+                                <h3 class="feature__title">Precios accesibles para todos los cursos</h3>
+                                <p class="feature__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut
+                                    diam vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum,
+                                    semper nunc quis, consequat arcu.
+                                </p>
+                            </div>
                         </div>
-                        <div class="feature">
-                            <img class="feature__img" src="./img/caracteristica.png" alt="Encuentra tu clase" />
-                            <h3 class="feature__title">Encuentra de inmediato tu clase</h3>
-                            <p class="feature__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam
-                                vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum, semper nunc
-                                quis, consequat arcu. 
-                            </p>
+                        <div class="col-lg-4 col-sm-6 col-xs-12 pt-4">
+                            <div class="feature h-100">
+                                <img class="feature__img" src="./img/caracteristica.png" alt="Encuentra tu clase" />
+                                <h3 class="feature__title">Encuentra de forma inmediata tu clase</h3>
+                                <p class="feature__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut
+                                    diam vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum,
+                                    semper nunc quis, consequat arcu.
+                                </p>
+                            </div>
                         </div>
                     </article>
                 </section>
                 <!--Sección: Nosotros-->
-                <section class="us">
-                    <article class="us__body">
-                        <h2 class="us__body__title">¿Quiénes somos?</h2>
+                <section class="row us">
+                    <article class="col-md-6 col-xs-12 mb-4">
+                        <h2>¿Quiénes somos?</h2>
                         <p class="us__body__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis finibus felis, non tempor leo euismod laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed scelerisque nisl quis cursus mattis. Morbi scelerisque ultrices placerat. Quisque eget commodo enim. Proin consectetur tellus a magna semper, sed rutrum massa congue. Etiam quis sem non est ultricies cursus. Nulla tempus convallis neque. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis finibus felis, non
+                            tempor leo euismod laoreet. Orci varius natoque penatibus et magnis dis parturient montes,
+                            nascetur ridiculus mus. Sed scelerisque nisl quis cursus mattis. Morbi scelerisque ultrices
+                            placerat. Quisque eget commodo enim. Proin consectetur tellus a magna semper, sed rutrum
+                            massa congue. Etiam quis sem non est ultricies cursus. Nulla tempus convallis neque.
                         </p>
                         <a href="./pages/nosotros.html" class="button">Ver más</a>
                     </article>
-                    <img class="us__img" src="./img/nosotros.jpg" alt="Nosotros" />
+                    <img class="us__img col-md-6 col-xs-12" src="./img/nosotros.jpg" alt="Nosotros" />
                 </section>
                 <!--Sección: Testimonios-->
                 <section class="testimonials">
                     <h2 class="testimonials__title">Nuestros clientes hablan por nosotros</h2>
-                    <article class="testimonials__body">
-                        <div class="testimonial">
-                            <img class="testimonial__img" src="./img/estudiante.png" alt="Testimonio Juan" />
-                            <h3 class="testimonial__title">Juan Velarde Lopez</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam
-                                vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum, semper nunc
-                                quis, consequat arcu. Pellentesque feugiat molestie enim a aliquam.
-                            </p>
+                    <article class="row justify-content-center">
+                        <div class="col-lg-4 col-sm-6 col-xs-12 pt-4">
+                            <div class="testimonial">
+                                <img class="testimonial__img" src="./img/estudiante.png" alt="Testimonio Juan" />
+                                <h3>Juan Velarde Lopez</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut
+                                    diam vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum,
+                                    semper nunc quis, consequat arcu. Pellentesque feugiat molestie enim a aliquam.
+                                </p>
+                            </div>
                         </div>
-                        <div class="testimonial">
-                            <img class="testimonial__img" src="./img/estudiante.png" alt="Testimonio Roxana" />
-                            <h3 class="testimonial__title">Roxana Moscoso Torres</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam
-                                vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum, semper nunc
-                                quis, consequat arcu. Pellentesque feugiat molestie enim a aliquam.
-                            </p>
+                        <div class="col-lg-4 col-sm-6 col-xs-12 pt-4">
+                            <div class="testimonial">
+                                <img class="testimonial__img" src="./img/estudiante.png" alt="Testimonio Roxana" />
+                                <h3>Roxana Moscoso Torres</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut
+                                    diam vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum,
+                                    semper nunc quis, consequat arcu. Pellentesque feugiat molestie enim a aliquam.
+                                </p>
+                            </div>
                         </div>
-                        <div class="testimonial">
-                            <img class="testimonial__img" src="./img/estudiante.png" alt="Testimonio Esperanza" />
-                            <h3 class="testimonial__title">Esperanza de la Cruz Ruiz</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam
-                                vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum, semper nunc
-                                quis, consequat arcu. Pellentesque feugiat molestie enim a aliquam.
-                            </p>
+                        <div class="col-lg-4 col-sm-6 col-xs-12 pt-4">
+                            <div class="testimonial">
+                                <img class="testimonial__img" src="./img/estudiante.png" alt="Testimonio Esperanza" />
+                                <h3>Esperanza de la Cruz Ruiz</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut
+                                    diam vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum,
+                                    semper nunc quis, consequat arcu. Pellentesque feugiat molestie enim a aliquam.
+                                </p>
+                            </div>
                         </div>
                     </article>
                 </section>
@@ -152,6 +192,12 @@
                     </div>
                 </article>
             </footer>
-        </body>
         </div>
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

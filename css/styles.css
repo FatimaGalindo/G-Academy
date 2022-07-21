@@ -13,16 +13,11 @@ body{
       opacity: 0;
       transform: translateY(80%);
     }
-    20% {
-      opacity: 0;
-    }
     50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
+        transform: translateY(0%);
+      }
     100% {
       opacity: 1;
-      transform: translateY(0%);
     }
 }
 
@@ -53,25 +48,16 @@ header {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    padding:2em 8em;
     color:white;
 }
 
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation: 2s appear ease-out;
+    background-color: #8bac28;
+    padding: 0 8em!important;
 }
 
 .nav__logo img {
-    width: 150px;
-}
-
-.nav__list{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 120px;
 }
 
 .nav__list li{
@@ -85,9 +71,10 @@ nav{
 }
 
 .hero{
-    margin-top:4em;
+    margin:6em auto 2em;
     overflow-wrap: normal;
     animation: 2s appear ease-out;
+    padding: 0em 8em;
 }
 
 .hero__title{
@@ -121,7 +108,7 @@ nav{
 
 main{
     grid-area: contenido;
-    padding: 2em 8em    ;
+    padding: 2em 8em;
 }
 
 main section{
@@ -136,17 +123,9 @@ main section h2{
 
 /*---FEATURES---*/
 
-.features__body{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2em auto 0em;
-}
-
 .feature{
     text-align: center;
     padding: 1em;
-    margin: 1em;
-    width: 30%;
     background-color: rgb(238, 237, 237);
     border-radius:10px;
 }
@@ -170,19 +149,6 @@ main section h2{
 
 /*---US---*/
 
-.us{
-    display:grid;
-    grid-template-areas:
-    "description img";
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 3em;
-}
-
-.us__body{
-    margin: 2em 0;
-    grid-area: description;
-}
-
 .us__body__description{
     margin-top: 2em;
     line-height: 1.5em;
@@ -191,27 +157,13 @@ main section h2{
 
 .us__img{
     object-fit: cover;
-    width:100%;
-    height:100%;
-    grid-area: img;
 }
 
 /*---TESTIMONIALS---*/
 
-.testimonials__title{
-    text-align: center;
-}
-
-.testimonials__body{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2em;
-}
-
 .testimonial{
     text-align: center;
-    padding: 2em;
-    width: 33%;
+    padding: 1em;
 }
 
 .testimonial:hover{
@@ -222,26 +174,14 @@ main section h2{
     width: 100px;
 }
 
-.testimonial__title{
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-
 .testimonial p{
     line-height: 1.5em;
 }
 
 /*---TEACHER---*/
 
-.teachers__body{
-    margin-top: 2em;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .teacher{
-    width: 33%;
-    padding: 2em;
+    padding: 1em;
     text-align: center;
 }
 
@@ -271,20 +211,6 @@ main section h2{
 
 /*---WHY---*/
 
-.why{
-    display:grid;
-    grid-template-areas:
-    "description img";
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 3em;
-}
-
-.why__body{
-    margin-top: 2em;
-    line-height: 1.5em;
-    margin-bottom: 2em;
-}
-
 .why__body__description{
     margin-top: 2em;
     margin-bottom: 2em;
@@ -292,9 +218,6 @@ main section h2{
 
 .why__img{
     object-fit: cover;
-    width:100%;
-    height:100%;
-    grid-area: img;
 }
 
 /*---FILTERS---*/
@@ -400,22 +323,14 @@ select {
 
 /*---QUESTIONS---*/
 
-.questions__pair{
-    margin-top: 2em;
-}
-
-.questions__item{
-    padding: 1em;
-    margin-top: 2em;
-}
-
-.questions__answer{
-    padding: 0 1em;
+.accordion-button:not(.collapsed) {
+    color:  black;
+    font-weight: bold;
+    background-color:  #dae5b8;
+    box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
 }
 
 /*CONTACT*/
-
-
 .form__textarea {
     width: 100%;
     padding: 12px;
@@ -457,8 +372,8 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #b3dd35;
-    padding: 2em;
+    background-color: #8bac28;
+    padding: 2em 8em;
 }
 
 .footer__logo{
@@ -525,14 +440,9 @@ footer .social{
 
 
 @media (max-width: 1024px){
-    header{
-        padding:2em;
-    }
-
     .hero{
         text-align: center;
         width:80%;
-        margin: 2em auto;
     }
 
     .hero__title{
@@ -551,16 +461,13 @@ footer .social{
         padding: 2em;
     }
     
-    .us, .why{
-        grid-column-gap: 1em;
-    }
 
-    footer{
-        padding:1em;
+    .hero, nav,footer{
+        padding: 1em !important;;
     }
     
-    .teacher, .benefit, .feature, .testimonial{
-        width:50%;
+    .benefit{
+      width:50%;
     }
     
 }
@@ -579,8 +486,12 @@ footer .social{
         margin-bottom: 1em;
     }
 
-    .teacher, .benefit, .feature, .testimonial{
+    .benefit, .feature, .testimonial{
         width:100%;
+    }
+
+    .us, .why{
+        text-align: center;
     }
     
 }
@@ -588,7 +499,6 @@ footer .social{
 @media (max-width:480px){
     
     header{
-        padding:1em;
         height: auto;
     }
 
@@ -612,13 +522,7 @@ footer .social{
         padding: 1em;
     }
 
-    .us, .why{
-        grid-template-areas:"description"
-         "img";  
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        text-align: center;
-    }
+    
 
     footer{
         padding:1em;
