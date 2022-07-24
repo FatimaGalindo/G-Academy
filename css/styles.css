@@ -8,6 +8,11 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+h3{
+    margin-top: 1em;
+    font-size:1.7em;
+}
+
 @keyframes appear {
     0% {
       opacity: 0;
@@ -81,7 +86,8 @@ nav{
     margin-bottom: 0.3em;
     width: 65%;
     font-size:4em;
-}
+    font-weight: bold;
+    feature__title}
 
 .hero__description{
     width: 50%;
@@ -101,6 +107,7 @@ nav{
 
 .button:hover{
     background-color: #8bac28;
+    color:white;
 }
 
 
@@ -118,7 +125,7 @@ main section{
 main section h2{
     color: #b3dd35;
     text-align: center;
-
+    font-weight: bold;
 }
 
 /*---FEATURES---*/
