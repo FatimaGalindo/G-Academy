@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Quicksand', sans-serif; }
+  body h3 {
+    margin-top: 1em;
+    font-size: 1.7em; }
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(80%); }
+  50% {
+    transform: translateY(0%); }
+  100% {
+    opacity: 1; } }
+
+#grilla {
+  display: grid;
+  grid-template-areas: 'header' 'contenido' 'footer';
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  grid-row-gap: 1em;
+  height: 100vh; }
+
+/*---HEADER---*/
+header {
+  grid-area: header;
+  background-image: linear-gradient(to right, rgba(67, 124, 40, 0.292), rgba(0, 0, 0, 0.329)), url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white; }
+  header nav {
+    background-color: #9ec32e;
+    padding: 0 8em !important; }
+  header .nav__logo img {
+    width: 120px; }
+  header .nav__list li {
+    list-style: none;
+    padding-right: 2em; }
+    header .nav__list li a {
+      text-decoration: none;
+      color: white; }
+  header .hero {
+    margin: 6em auto 2em;
+    overflow-wrap: normal;
+    animation: 2s appear ease-out;
+    padding: 0em 8em; }
+    header .hero__title {
+      margin-bottom: 0.3em;
+      width: 65%;
+      font-size: 4em;
+      font-weight: bold; }
+    header .hero__description {
+      width: 50%;
+      margin-bottom: 2em;
+      line-height: 1.5em; }
+
+.button {
+  background-color: #9ec32e;
+  color: white;
+  padding: 1em;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s; }
+  .button:hover {
+    background-color: #749022;
+    color: white; }
+
+/*---MAIN---*/
+main {
+  grid-area: contenido;
+  padding: 2em 8em; }
+  main section {
+    margin: 4em 0 6em 0; }
+    main section h2 {
+      color: #9ec32e;
+      text-align: center;
+      font-weight: bold; }
+
+/*---FEATURES---*/
+.feature {
+  text-align: center;
+  padding: 1em;
+  background-color: #eeeded;
+  border-radius: 10px; }
+  .feature:hover {
+    transform: scale(1.1); }
+  .feature__img {
+    width: 100px; }
+  .feature__title {
+    font-weight: bold;
+    margin-bottom: 1em; }
+  .feature__description {
+    line-height: 1.5em; }
+
+/*---US---*/
+.us__body__description {
+  margin-top: 2em;
+  line-height: 1.5em;
+  margin-bottom: 2em; }
+
+.us__img {
+  object-fit: cover; }
+
+/*---TESTIMONIALS---*/
+.testimonial {
+  text-align: center;
+  padding: 1em; }
+  .testimonial:hover {
+    transform: scale(1.1); }
+  .testimonial__img {
+    width: 100px; }
+  .testimonial p {
+    line-height: 1.5em; }
+
+/*---FOOTER---*/
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #9ec32e;
+  padding: 2em 8em; }
+  footer .social {
+    width: 20px; }
+
+.footer__logo {
+  width: 150px; }
+
+.footer__list {
+  padding: 1em; }
+  .footer__list li {
+    list-style: none;
+    margin-bottom: 1em; }
+    .footer__list li a {
+      text-decoration: none;
+      display: inline-block;
+      color: white; }
+
+.footer__subscribe {
+  padding: 1em; }
+  .footer__subscribe h4 {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 0.5em; }
+  .footer__subscribe input {
+    height: 30px;
+    padding: 0 1em;
+    border-radius: 5px;
+    border: 0; }
+  .footer__subscribe__social {
+    margin-top: 1em; }
+    .footer__subscribe__social a {
+      color: white;
+      padding: 0.5em; }
+
+.button--white {
+  background-color: white;
+  border: 0;
+  border-radius: 5px; }
+
+@media (max-width: 1024px) {
+  header .hero {
+    text-align: center;
+    width: 80%; }
+    header .hero__title {
+      width: 100%;
+      font-size: 3em;
+      margin-bottom: 1em; }
+    header .hero__description {
+      margin-bottom: 2em;
+      line-height: 1.5em;
+      width: 100%; }
+  main {
+    padding: 2em; }
+  header .hero, header nav, header footer {
+    padding: 1em !important; }
+  .benefit {
+    width: 50%; } }
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center; }
+    nav ul {
+      flex-direction: column; }
+      nav ul li {
+        margin-bottom: 1em; }
+  .benefit, .feature, .testimonial {
+    width: 100%; }
+  .us, .why {
+    text-align: center; } }
+
+@media (max-width: 480px) {
+  header {
+    height: auto; }
+    header .hero {
+      text-align: center; }
+      header .hero__title {
+        width: 100%;
+        font-size: 2.5em;
+        margin-bottom: 1em; }
+      header .hero__description {
+        margin-bottom: 2em;
+        line-height: 1.5em;
+        width: 100%; }
+  main {
+    padding: 1em; }
+  footer {
+    padding: 1em; } }
