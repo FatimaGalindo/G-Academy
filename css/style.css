@@ -1,3 +1,24 @@
+.button, .btn-primary, .btn-secondary {
+  padding: 1em;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s; }
+  .button:hover, .btn-primary:hover, .btn-secondary:hover {
+    opacity: 1.2; }
+
+.btn-primary {
+  background-color: #9ec32e;
+  color: #FFFFFF; }
+  .btn-primary:hover, .btn-primary:active {
+    color: #FFFFFF; }
+
+.btn-secondary {
+  background-color: #F2522E;
+  color: #FFFFFF; }
+  .btn-secondary:hover, .btn-secondary:active {
+    color: #FFFFFF; }
+
 * {
   padding: 0;
   margin: 0;
@@ -34,7 +55,7 @@ header {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
-  color: white; }
+  color: #FFFFFF; }
   header nav {
     background-color: #9ec32e;
     padding: 0 8em !important; }
@@ -45,7 +66,7 @@ header {
     padding-right: 2em; }
     header .nav__list li a {
       text-decoration: none;
-      color: white; }
+      color: #FFFFFF; }
   header .hero {
     margin: 6em auto 2em;
     overflow-wrap: normal;
@@ -60,18 +81,6 @@ header {
       width: 50%;
       margin-bottom: 2em;
       line-height: 1.5em; }
-
-.button {
-  background-color: #9ec32e;
-  color: white;
-  padding: 1em;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.5s; }
-  .button:hover {
-    background-color: #749022;
-    color: white; }
 
 /*---MAIN---*/
 main {
@@ -143,13 +152,13 @@ footer {
     .footer__list li a {
       text-decoration: none;
       display: inline-block;
-      color: white; }
+      color: #FFFFFF; }
 
 .footer__subscribe {
   padding: 1em; }
   .footer__subscribe h4 {
     font-size: 1.5em;
-    color: white;
+    color: #FFFFFF;
     margin-bottom: 0.5em; }
   .footer__subscribe input {
     height: 30px;
@@ -159,11 +168,11 @@ footer {
   .footer__subscribe__social {
     margin-top: 1em; }
     .footer__subscribe__social a {
-      color: white;
+      color: #FFFFFF;
       padding: 0.5em; }
 
 .button--white {
-  background-color: white;
+  background-color: #FFFFFF;
   border: 0;
   border-radius: 5px; }
 

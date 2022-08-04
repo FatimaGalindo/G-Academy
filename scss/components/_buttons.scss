@@ -1,0 +1,26 @@
+@mixin button-colors($background-color,$text-color){
+    background-color: $background-color;
+    color: $text-color;
+}
+
+.button{
+    padding: 1em;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s;
+    &:hover{
+        opacity: 1.2;
+    }
+    
+}
+
+@each $color, $value in $colors {
+    .btn-#{$color}{
+        @extend .button;
+        @include button-colors($value,$white);
+        &:hover, &:active{
+            color:$white;
+        }
+    }
+}

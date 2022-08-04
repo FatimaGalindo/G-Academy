@@ -1,4 +1,5 @@
 @import "variables";
+@import "components/buttons";
 
 * {
     padding: 0;
@@ -48,10 +49,10 @@ header {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    color: $color-text;
+    color: $white;
 
     nav {
-        background-color: $color-primary;
+        background-color: $primary;
         padding: 0 8em !important;
     }
 
@@ -65,7 +66,7 @@ header {
             padding-right: 2em;
             a {
                 text-decoration: none;
-                color: $color-text;
+                color: $white;
             }
 
         }
@@ -92,22 +93,6 @@ header {
     }
 }
 
-.button {
-    background-color: $color-primary;
-    color: $color-text;
-    padding: 1em;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.5s;
-
-    &:hover{
-        background-color: $color-primary-hover;
-        color: $color-text;
-    }
-}
-
-
 /*---MAIN---*/
 
 main {
@@ -118,7 +103,7 @@ main {
         margin: 4em 0 6em 0;
 
         h2 {
-            color: $color-primary;
+            color: map-get($map: $colors, $key: primary );
             text-align: center;
             font-weight: bold;
         }
@@ -194,7 +179,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: $color-primary;
+    background-color: $primary;
     padding: 2em 8em;
 
     .social {
@@ -216,7 +201,7 @@ footer {
             a {
                 text-decoration: none;
                 display: inline-block;
-                color: $color-text;
+                color: $white;
             }
         }
     }
@@ -225,7 +210,7 @@ footer {
         padding: 1em;
         h4 {
             font-size: 1.5em;
-            color: $color-text;
+            color: $white;
             margin-bottom: 0.5em;
         }
         input {
@@ -237,7 +222,7 @@ footer {
         &__social {
             margin-top: 1em;
             a {
-                color: $color-text;
+                color: $white;
                 padding: 0.5em;
             }
         }
@@ -245,7 +230,7 @@ footer {
 }
 
 .button--white {
-    background-color: $color-text;
+    background-color: $white;
     border: 0;
     border-radius: 5px;
 }

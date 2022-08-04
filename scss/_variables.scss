@@ -1,3 +1,9 @@
-$color-text: white;
-$color-primary: #9ec32e;
-$color-primary-hover: #749022;
+$primary: #9ec32e;
+$secondary: #F2522E;
+$white: #FFFFFF;
+$black: #000000;
+
+$colors:(
+    primary: $primary,
+    secondary: $secondary,
+)
