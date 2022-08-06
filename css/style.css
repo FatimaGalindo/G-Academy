@@ -129,6 +129,135 @@ main {
   .testimonial p {
     line-height: 1.5em; }
 
+/*---TEACHER---*/
+.teacher {
+  padding: 1em;
+  text-align: center; }
+  .teacher:hover {
+    transform: scale(1.1); }
+  .teacher__title {
+    text-align: center;
+    padding: 1em;
+    font-weight: bold; }
+  .teacher__img {
+    width: 100px;
+    border-radius: 50%; }
+  .teacher p {
+    line-height: 1.5em; }
+
+/*---WHY---*/
+.why__body__description {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.why__img {
+  object-fit: cover; }
+
+/*---FILTERS---*/
+.filters {
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 10px;
+  border: 1px solid #9ec32e;
+  background-color: #e8f2c9; }
+  .filters__select {
+    margin: 0 1em; }
+
+select {
+  padding: 1em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+/*---TEACHER RESULTS---*/
+.results__title {
+  text-align: center;
+  padding: 1em; }
+
+.result {
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 10px;
+  border: 1px solid #9ec32e;
+  background-color: #e8f2c9; }
+  .result:hover {
+    border: 1px solid #96ba2c; }
+  .result__img {
+    border-radius: 50%;
+    width: 100px; }
+  .result__name {
+    margin-top: 1em;
+    color: #000000; }
+  .result__course {
+    color: #3f3f3f;
+    font-size: 0.8em;
+    margin-top: 1em; }
+  .result__description {
+    color: #3f3f3f;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .result__price {
+    color: #ba0202;
+    margin-top: 1em;
+    font-weight: bold;
+    margin-bottom: 2em; }
+
+/*---BENEFITS---*/
+.benefits__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em auto 0em; }
+
+.benefit {
+  text-align: center;
+  padding: 1em;
+  width: 30%;
+  margin: 1em;
+  background-color: #eeeded;
+  border-radius: 10px; }
+  .benefit:hover {
+    transform: scale(1.1); }
+  .benefit__img {
+    width: 100px; }
+  .benefit__title {
+    font-weight: bold;
+    margin-bottom: 1em; }
+
+/*---QUESTIONS---*/
+.accordion-button:not(.collapsed) {
+  color: black;
+  font-weight: bold;
+  background-color: #e8f2c9;
+  box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color); }
+
+/*CONTACT*/
+.form__textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; }
+
+.form__text {
+  display: block;
+  padding: 12px 20px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc; }
+
+label {
+  padding: 1em 1em 1em 0;
+  display: inline-block; }
+
+.contact .button, .contact .btn-primary, .contact .btn-secondary {
+  margin-top: 2em; }
+
+.contact select {
+  display: block;
+  width: 100%; }
+
 /*---FOOTER---*/
 footer {
   grid-area: footer;
@@ -190,7 +319,9 @@ footer {
       width: 100%; }
   main {
     padding: 2em; }
-  header .hero, header nav, header footer {
+  header .hero,
+  header nav,
+  header footer {
     padding: 1em !important; }
   .benefit {
     width: 50%; } }
@@ -203,9 +334,12 @@ footer {
       flex-direction: column; }
       nav ul li {
         margin-bottom: 1em; }
-  .benefit, .feature, .testimonial {
+  .benefit,
+  .feature,
+  .testimonial {
     width: 100%; }
-  .us, .why {
+  .us,
+  .why {
     text-align: center; } }
 
 @media (max-width: 480px) {

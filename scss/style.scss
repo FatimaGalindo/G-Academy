@@ -1,5 +1,5 @@
-@import "variables";
-@import "components/buttons";
+@import 'variables';
+@import 'components/buttons';
 
 * {
     padding: 0;
@@ -14,7 +14,6 @@ body {
         font-size: 1.7em;
     }
 }
-
 
 @keyframes appear {
     0% {
@@ -56,11 +55,11 @@ header {
         padding: 0 8em !important;
     }
 
-    .nav{
+    .nav {
         &__logo img {
             width: 120px;
         }
-    
+
         &__list li {
             list-style: none;
             padding-right: 2em;
@@ -68,7 +67,6 @@ header {
                 text-decoration: none;
                 color: $white;
             }
-
         }
     }
 
@@ -98,26 +96,24 @@ header {
 main {
     grid-area: contenido;
     padding: 2em 8em;
-    
+
     section {
         margin: 4em 0 6em 0;
 
         h2 {
-            color: map-get($map: $colors, $key: primary );
+            color: map-get($map: $colors, $key: primary);
             text-align: center;
             font-weight: bold;
         }
     }
-
 }
-
 
 /*---FEATURES---*/
 
 .feature {
     text-align: center;
     padding: 1em;
-    background-color: rgb(238, 237, 237);
+    background-color: $background;
     border-radius: 10px;
 
     &:hover {
@@ -140,7 +136,7 @@ main {
 
 /*---US---*/
 
-.us{
+.us {
     &__body__description {
         margin-top: 2em;
         line-height: 1.5em;
@@ -171,6 +167,193 @@ main {
     }
 }
 
+/*---TEACHER---*/
+
+.teacher {
+    padding: 1em;
+    text-align: center;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__title {
+        text-align: center;
+        padding: 1em;
+        font-weight: bold;
+    }
+
+    &__img {
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    p {
+        line-height: 1.5em;
+    }
+}
+
+/*---WHY---*/
+
+.why {
+    &__body__description {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    &__img {
+        object-fit: cover;
+    }
+}
+
+/*---FILTERS---*/
+
+.filters {
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 10px;
+    border: 1px solid $primary;
+    background-color: $primary-light;
+
+    &__select {
+        margin: 0 1em;
+    }
+}
+
+select {
+    padding: 1em;
+    display: inline-block;
+    border: 1px solid $gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*---TEACHER RESULTS---*/
+
+.results__title {
+    text-align: center;
+    padding: 1em;
+}
+
+.result {
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 10px;
+    border: 1px solid $primary;
+    background-color: $primary-light;
+
+    &:hover {
+        border: 1px solid $primary-dark;
+    }
+
+    &__img {
+        border-radius: 50%;
+        width: 100px;
+    }
+
+    &__name {
+        margin-top: 1em;
+        color: $black;
+    }
+
+    &__course {
+        color: $dark;
+        font-size: 0.8em;
+        margin-top: 1em;
+    }
+
+    &__description {
+        color: $dark;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    &__price {
+        color: $red;
+        margin-top: 1em;
+        font-weight: bold;
+        margin-bottom: 2em;
+    }
+}
+
+/*---BENEFITS---*/
+
+.benefits {
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2em auto 0em;
+    }
+}
+
+.benefit {
+    text-align: center;
+    padding: 1em;
+    width: 30%;
+    margin: 1em;
+    background-color: $background;
+    border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__img {
+        width: 100px;
+    }
+
+    &__title {
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+}
+
+/*---QUESTIONS---*/
+
+.accordion-button {
+    &:not(.collapsed) {
+        color: black;
+        font-weight: bold;
+        background-color: $primary-light;
+        box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+    }
+}
+
+/*CONTACT*/
+
+.form {
+    &__textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid $gray;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    &__text {
+        display: block;
+        padding: 12px 20px;
+        border: none;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid $gray;
+    }
+}
+
+label {
+    padding: 1em 1em 1em 0;
+    display: inline-block;
+}
+
+.contact {
+    .button {
+        margin-top: 2em;
+    }
+    select {
+        display: block;
+        width: 100%;
+    }
+}
+
 /*---FOOTER---*/
 
 footer {
@@ -187,8 +370,7 @@ footer {
     }
 }
 
-
-.footer{
+.footer {
     &__logo {
         width: 150px;
     }
@@ -235,92 +417,90 @@ footer {
     border-radius: 5px;
 }
 
-
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
     header {
-        .hero{
+        .hero {
             text-align: center;
-            width:80%;
+            width: 80%;
 
-            &__title{
+            &__title {
                 width: 100%;
-                font-size:3em;
+                font-size: 3em;
                 margin-bottom: 1em;
             }
 
-            &__description{
+            &__description {
                 margin-bottom: 2em;
                 line-height: 1.5em;
-                width:100%;
+                width: 100%;
             }
         }
     }
-    
-    main{
+
+    main {
         padding: 2em;
     }
-    header{
-        .hero, nav,footer{
-            padding: 1em !important;;
+    header {
+        .hero,
+        nav,
+        footer {
+            padding: 1em !important;
         }
     }
-    
-    .benefit{
-      width:50%;
+
+    .benefit {
+        width: 50%;
     }
-    
 }
-    
-@media (max-width:768px){
+
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: center;
         ul {
             flex-direction: column;
-            li{
+            li {
                 margin-bottom: 1em;
             }
         }
     }
 
-    .benefit, .feature, .testimonial{
-        width:100%;
+    .benefit,
+    .feature,
+    .testimonial {
+        width: 100%;
     }
 
-    .us, .why{
+    .us,
+    .why {
         text-align: center;
     }
-    
 }
-    
-@media (max-width:480px){
-    
-    header{
+
+@media (max-width: 480px) {
+    header {
         height: auto;
 
-        .hero{
+        .hero {
             text-align: center;
-            &__title{
+            &__title {
                 width: 100%;
-                font-size:2.5em;
+                font-size: 2.5em;
                 margin-bottom: 1em;
             }
-            &__description{
+            &__description {
                 margin-bottom: 2em;
                 line-height: 1.5em;
-                width:100%;
+                width: 100%;
             }
         }
-        
     }
 
-    main{
+    main {
         padding: 1em;
     }
 
-    footer{
-        padding:1em;
+    footer {
+        padding: 1em;
     }
-    
-
 }
