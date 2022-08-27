@@ -17,6 +17,7 @@
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="./../css/style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
     </head>
@@ -67,7 +68,7 @@
         <!--Contenido-->
         <main>
             <!--Sección: Formulario de registro-->
-            <section class="contact">
+            <section class="contact wow animate__animated animate__fadeInUp">
                 <form action="">
                     <label for="nombre">Nombre</label>
                     <input
@@ -123,7 +124,7 @@
                 </form>
             </section>
             <!--Sección: Ubicación-->
-            <section>
+            <section class="wow animate__animated animate__fadeInUp">
                 <h2>Nos ubicamos en</h2>
                 <div style="width: 100%">
                     <iframe
@@ -175,5 +176,9 @@
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
             crossorigin="anonymous"
         ></script>
+        <script src="./../js/wow.min.js"></script>
+        <script>
+            new WOW().init()
+        </script>
     </body>
 </html>

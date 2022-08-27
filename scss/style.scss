@@ -11,7 +11,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     h3 {
         margin-top: 1em;
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
 }
 
@@ -43,11 +43,10 @@ body {
 /*---HEADER---*/
 header {
     grid-area: header;
-    background-image: linear-gradient(to right, rgba(67, 124, 40, 0.292), rgba(0, 0, 0, 0.329)), url(../img/hero.jpg);
+    background-image: linear-gradient(to right, rgba(67, 124, 40, 0.292), rgba(0, 0, 0, 0.329)), url(../img/hero_2.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
     color: $white;
 
     nav {
@@ -71,20 +70,24 @@ header {
     }
 
     .hero {
+        display: flex;
+        flex-direction: column;
         margin: 6em auto 2em;
         overflow-wrap: normal;
         animation: 2s appear ease-out;
+        text-align: center;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
         padding: 0em 8em;
 
         &__title {
             margin-bottom: 0.3em;
-            width: 65%;
             font-size: 4em;
             font-weight: bold;
         }
 
         &__description {
-            width: 50%;
             margin-bottom: 2em;
             line-height: 1.5em;
         }
@@ -95,11 +98,11 @@ header {
 
 main {
     grid-area: contenido;
+    width: 90%;
+    margin: 0 auto;
     padding: 2em 8em;
-
     section {
         margin: 4em 0 6em 0;
-
         h2 {
             color: map-get($map: $colors, $key: primary);
             text-align: center;
@@ -108,29 +111,37 @@ main {
     }
 }
 
+.header--principal {
+    height: 100vh;
+}
+
 /*---FEATURES---*/
+.features {
+    margin-top: -6em;
+    background: $white;
+    padding: 4.5em 2em 4em;
+    box-shadow: 0 16px 24px 0 rgba(50, 50, 50, 0.07);
+    border-radius: 15px;
+    .feature {
+        padding: 1em;
+        border-radius: 10px;
 
-.feature {
-    text-align: center;
-    padding: 1em;
-    background-color: $background;
-    border-radius: 10px;
+        &:hover {
+            transform: scale(1.1);
+        }
 
-    &:hover {
-        transform: scale(1.1);
-    }
+        &__img {
+            width: 100px;
+        }
 
-    &__img {
-        width: 100px;
-    }
+        &__title {
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
 
-    &__title {
-        font-weight: bold;
-        margin-bottom: 1em;
-    }
-
-    &__description {
-        line-height: 1.5em;
+        &__description {
+            line-height: 1.5em;
+        }
     }
 }
 
@@ -160,6 +171,9 @@ main {
 
     &__img {
         width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
     }
 
     p {
@@ -184,8 +198,10 @@ main {
     }
 
     &__img {
-        width: 100px;
         border-radius: 50%;
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
     }
 
     p {
@@ -205,10 +221,10 @@ main {
     }
 }
 
-/*---FILTERS---*/
+/*---TEACHER RESULTS---*/
 
 .filters {
-    margin-bottom: 2em;
+    margin-bottom: 0em;
     padding: 2em;
     border-radius: 10px;
     border: 1px solid $primary;
@@ -227,7 +243,9 @@ select {
     box-sizing: border-box;
 }
 
-/*---TEACHER RESULTS---*/
+.results {
+    margin-top: 0em;
+}
 
 .results__title {
     text-align: center;
@@ -247,7 +265,9 @@ select {
 
     &__img {
         border-radius: 50%;
+        object-fit: cover;
         width: 100px;
+        height: 100px;
     }
 
     &__name {
@@ -278,6 +298,7 @@ select {
 /*---BENEFITS---*/
 
 .benefits {
+    margin-top: 0em;
     &__body {
         display: flex;
         flex-wrap: wrap;
@@ -320,37 +341,38 @@ select {
 
 /*CONTACT*/
 
-.form {
-    &__textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid $gray;
-        border-radius: 4px;
-        resize: vertical;
-    }
-
-    &__text {
-        display: block;
-        padding: 12px 20px;
-        border: none;
-        width: 100%;
-        border-radius: 4px;
-        border: 1px solid $gray;
-    }
-}
-
-label {
-    padding: 1em 1em 1em 0;
-    display: inline-block;
-}
-
 .contact {
+    margin-top: 0;
     .button {
         margin-top: 2em;
     }
     select {
         display: block;
         width: 100%;
+    }
+
+    .form {
+        &__textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid $gray;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        &__text {
+            display: block;
+            padding: 12px 20px;
+            border: none;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid $gray;
+        }
+    }
+
+    label {
+        padding: 1em 1em 1em 0;
+        display: inline-block;
     }
 }
 
@@ -418,13 +440,15 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    header {
+    header,
+    .header--principal {
+        height: auto;
         .hero {
+            padding: 1em;
             text-align: center;
-            width: 80%;
+            width: 85%;
 
             &__title {
-                width: 100%;
                 font-size: 3em;
                 margin-bottom: 1em;
             }
@@ -432,24 +456,34 @@ footer {
             &__description {
                 margin-bottom: 2em;
                 line-height: 1.5em;
-                width: 100%;
             }
+        }
+
+        nav {
+            padding: 1em !important;
         }
     }
 
     main {
         padding: 2em;
-    }
-    header {
-        .hero,
-        nav,
-        footer {
-            padding: 1em !important;
+        .features {
+            margin-top: 0em;
+            border: 0;
+            padding: 0;
+            box-shadow: none;
+
+            .feature {
+                text-align: center;
+            }
         }
     }
 
     .benefit {
         width: 50%;
+    }
+
+    footer {
+        padding: 4em;
     }
 }
 
@@ -465,6 +499,10 @@ footer {
         }
     }
 
+    main {
+        width: 90%;
+    }
+
     .benefit,
     .feature,
     .testimonial {
@@ -478,13 +516,11 @@ footer {
 }
 
 @media (max-width: 480px) {
-    header {
-        height: auto;
-
+    header,
+    .header--principal {
         .hero {
             text-align: center;
             &__title {
-                width: 100%;
                 font-size: 2.5em;
                 margin-bottom: 1em;
             }

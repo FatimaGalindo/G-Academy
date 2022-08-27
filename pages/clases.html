@@ -20,6 +20,7 @@
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="./../css/style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
     </head>
@@ -71,8 +72,8 @@
         </header>
         <!--Contenido-->
         <main>
-            <!--Sección: Filtros-->
-            <section>
+            <!--Sección: Resultados-->
+            <section class="results wow animate__animated animate__fadeInUp">
                 <form class="filters" action="">
                     <label for="curso"> Curso:</label>
                     <select class="filters__select" name="curso" id="curso">
@@ -89,12 +90,9 @@
                         <option value="a">Avanzado</option>
                     </select>
                 </form>
-            </section>
-            <!--Sección: Resultados-->
-            <section>
                 <h2 class="results__title">Selecciona tu docente</h2>
                 <article class="result">
-                    <img class="result__img" src="./../img/docente.jpg" alt="Docente Rosa Ferandez" />
+                    <img class="result__img" src="./../img/docente-2.jpg" alt="Docente Rosa Ferandez" />
                     <div>
                         <h3 class="result__name">Rosa Ferandez</h3>
                         <h4 class="result__course">Cálculo I, Ecuaciones diferenciales, Álgebra</h4>
@@ -112,12 +110,12 @@
                     </div>
                 </article>
                 <article class="result">
-                    <img class="result__img" src="./../img/docente.jpg" alt="Docente Rosa Ferandez" />
+                    <img class="result__img" src="./../img/docente-6.jpg" alt="Docente Angelo Uribe" />
                     <div>
-                        <h3 class="result__name">Angela Uribe</h3>
+                        <h3 class="result__name">Angelo Uribe</h3>
                         <h4 class="result__course">Idioma Ruso</h4>
                         <p class="result__description">
-                            ¡Hola! Mi nombre es Angela Uribe y soy hablante nativa de ruso. Tengo varios años de
+                            ¡Hola! Mi nombre es Angelo Uribe y soy hablante nativo de ruso. Tengo varios años de
                             experiencia docente, incluido trabajar como asistente de enseñanza en cursos de ruso en la
                             Universidad de Helsinki. Actualmente estoy estudiando para una Maestría en Comunicación
                             Intercultural. ¡Me apasiona la enseñanza de idiomas y disfruto familiarizarme con personas
@@ -133,7 +131,7 @@
                     </div>
                 </article>
                 <article class="result">
-                    <img class="result__img" src="./../img/docente.jpg" alt="Docente Rosa Ferandez" />
+                    <img class="result__img" src="./../img/docente-3.jpeg" alt="Docente Mariana Cornejo" />
                     <div>
                         <h3 class="result__name">Mariana Cornejo</h3>
                         <h4 class="result__course">
@@ -155,7 +153,7 @@
                     </div>
                 </article>
                 <article class="result">
-                    <img class="result__img" src="./../img/docente.jpg" alt="Docente Rosa Ferandez" />
+                    <img class="result__img" src="./../img/docente-4.jpg" alt="Docente Yanet Mamani" />
                     <div>
                         <h3 class="result__name">Yanet Mamani</h3>
                         <h4 class="result__course">Matemáticas, Estadística, Cálculo y Geometría</h4>
@@ -175,7 +173,7 @@
                     </div>
                 </article>
                 <article class="result">
-                    <img class="result__img" src="./../img/docente.jpg" alt="Docente Rosa Ferandez" />
+                    <img class="result__img" src="./../img/docente-1.jpg" alt="Docente Daniela Vilca" />
                     <div>
                         <h3 class="result__name">Daniela Vilca</h3>
                         <h4 class="result__course">Álgebra, Matemáticas básicas y Álgebra lineal</h4>
@@ -195,9 +193,9 @@
                     </div>
                 </article>
                 <article class="result">
-                    <img class="result__img" src="./../img/docente.jpg" alt="Docente Rosa Ferandez" />
+                    <img class="result__img" src="./../img/docente-5.jpg" alt="Docente Sebastían Avanto" />
                     <div>
-                        <h3 class="result__name">Rosa Ferandez</h3>
+                        <h3 class="result__name">Sebastían Avanto</h3>
                         <h4 class="result__course">Matemática</h4>
                         <p class="result__description">
                             Mis clases buscan que los estudiantes de matemáticas puedan entender los temas de manera
@@ -253,5 +251,9 @@
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
             crossorigin="anonymous"
         ></script>
+        <script src="./../js/wow.min.js"></script>
+        <script>
+            new WOW().init()
+        </script>
     </body>
 </html>

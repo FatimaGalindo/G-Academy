@@ -4,8 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Bienvenido a G-Academy. Una plataforma donde encontrarás a profesores particulares con experiencia y calidad de enseñanza para reforzar temas académicos">
-        <meta name="keywords" content="educacion, clases particulares, clases virtuales, educación personalizada, reforzamiento, aprendizaje, docentes particulares">
+        <meta
+            name="description"
+            content="Bienvenido a G-Academy. Una plataforma donde encontrarás a profesores particulares con experiencia y calidad de enseñanza para reforzar temas académicos"
+        />
+        <meta
+            name="keywords"
+            content="educacion, clases particulares, clases virtuales, educación personalizada, reforzamiento, aprendizaje, docentes particulares"
+        />
         <title>G-Academy | Clases particulares</title>
         <!-- CSS only -->
         <link
@@ -14,13 +20,14 @@
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="./css/style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <div id="grilla">
             <!--Header-->
-            <header>
+            <header class="header--principal">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a href="#" class="navbar-brand nav__logo">
@@ -58,24 +65,23 @@
                     </div>
                 </nav>
                 <section class="hero">
-                    <h1 class="hero__title">Logra el éxito académico con G-Academy</h1>
+                    <h1 class="hero__title">Aprende desde casa con tu profesor ideal</h1>
                     <p class="hero__description">
-                        Este proyecto nace fruto del trabajo de un grupo de profesores con muchos años de experiencia en
-                        centros educativos que tienen la idea de facilitar el acceso de cualquier alumno a las clases
+                        Este proyecto nace fruto del trabajo de un grupo de profesores con muchos años de experiencia que tuvieron la idea de facilitar el acceso de cualquier alumno a las clases
                         particulares online, ideando un sistema innovador, flexible y económico.
                     </p>
-                    <a href="./pages/clases.html" class="button btn-primary">Busca tu clase</a>
+                    <a href="./pages/clases.html" class="button btn-secondary">Reserva tu clase</a>
                 </section>
             </header>
             <!--Contenido-->
             <main>
                 <!--Sección: Caracteristicas-->
-                <section class="features container-fluid">
+                <section class="features container-fluid wow animate__animated animate__fadeInUp">
                     <h2 class="features__title">Recibe una formación de calidad de forma personalizada</h2>
                     <article class="row justify-content-center">
                         <div class="col-lg-3 col-sm-6 col-xs-12 pt-4">
                             <div class="feature h-100">
-                                <img class="feature__img" src="./img/caracteristica.png" alt="Formación de calidad" />
+                                <img class="feature__img" src="./img/clases-flexibles.png" alt="Formación de calidad" />
                                 <h3 class="feature__title">Clases 100% flexibles</h3>
                                 <p class="feature__description">
                                     Clases cuando quieras, desde el sofá de casa, despacho, oficina, cuato, etc.
@@ -84,7 +90,7 @@
                         </div>
                         <div class="col-lg-3 col-sm-6 col-xs-12 pt-4">
                             <div class="feature h-100">
-                                <img class="feature__img" src="./img/caracteristica.png" alt="Precios accesibles" />
+                                <img class="feature__img" src="./img/garantia.png" alt="Precios accesibles" />
                                 <h3 class="feature__title">Satisfacción garantizada</h3>
                                 <p class="feature__description">
                                     Nos encargamos de todo. Así tú puedes centrarte en tus clases
@@ -93,7 +99,7 @@
                         </div>
                         <div class="col-lg-3 col-sm-6 col-xs-12 pt-4">
                             <div class="feature h-100">
-                                <img class="feature__img" src="./img/caracteristica.png" alt="Encuentra tu clase" />
+                                <img class="feature__img" src="./img/profesores-certificados.png" alt="Encuentra tu clase" />
                                 <h3 class="feature__title">Profesores Certificados</h3>
                                 <p class="feature__description">
                                     Da un salto en tu carrera profesional, domina un idioma o apruébalo todo
@@ -102,7 +108,7 @@
                         </div>
                         <div class="col-lg-3 col-sm-6 col-xs-12 pt-4">
                             <div class="feature h-100">
-                                <img class="feature__img" src="./img/caracteristica.png" alt="Encuentra tu clase" />
+                                <img class="feature__img" src="./img/accesible.png" alt="Encuentra tu clase" />
                                 <h3 class="feature__title">Accesibles para todos</h3>
                                 <p class="feature__description">
                                     Clases económicas: sin matrícula, mínimo de horas, ni desplazamientos.
@@ -112,46 +118,55 @@
                     </article>
                 </section>
                 <!--Sección: Nosotros-->
-                <section class="row us">
+                <section class="row us wow animate__animated animate__fadeInUp">
                     <article class="col-md-6 col-xs-12 mb-4">
                         <h2>¿Quiénes somos?</h2>
                         <p class="us__body__description">
-                            Apasionados, soñadores, utopistas, solidarios, ingeniosos, comprometidos, políglotas y siempre listos para la aventura. Nuestro compromiso va más allá de ayudarte a encontrar tu profesor ideal, es ayudarte a que alcances tus objetivos.
-                            Desde atención al cliente hasta ingeniería, centramos nuestros esfuerzos en hacer la vida
-                            más fácil a los miles de profesores y alumnos que utilizan G-Academy a diario para dar o
-                            recibir clases. Y tú, ¿ya utilizas G-Academy?
+                            Apasionados, soñadores, utopistas, solidarios, ingeniosos, comprometidos, políglotas y
+                            siempre listos para la aventura. Nuestro compromiso va más allá de ayudarte a encontrar tu
+                            profesor ideal, es ayudarte a que alcances tus objetivos. Desde atención al cliente hasta
+                            ingeniería, centramos nuestros esfuerzos en hacer la vida más fácil a los miles de
+                            profesores y alumnos que utilizan G-Academy a diario para dar o recibir clases. Y tú, ¿ya
+                            utilizas G-Academy?
                         </p>
                         <a href="./pages/nosotros.html" class="button btn-secondary">Ver más</a>
                     </article>
                     <img class="us__img col-md-6 col-xs-12" src="./img/nosotros.jpg" alt="Nosotros" />
                 </section>
                 <!--Sección: Testimonios-->
-                <section class="testimonials">
+                <section class="testimonials wow animate__animated animate__fadeInUp">
                     <h2 class="testimonials__title">Nuestros clientes hablan por nosotros</h2>
                     <article class="row justify-content-center">
                         <div class="col-lg-4 col-sm-6 col-xs-12 pt-4">
                             <div class="testimonial">
-                                <img class="testimonial__img" src="./img/estudiante.png" alt="Testimonio Juan" />
-                                <h3>Juan Velarde Lopez</h3>
+                                <img class="testimonial__img" src="./img/estudiante-esperanza.jpg" alt="Testimonio Esperanza" />
+                                <h3>Esperanza de la Cruz Ruiz</h3>
                                 <p>
-                                    "Me fue muy agradable tomar este curso. Sabía muy poco de Internet, mandar mails y del mundo digital, y realmente necesitaba una nivelación. Tomé las clases de G-Academy y en mi propia casa vino un profesor joven muy agradable, quien con mucha paciencia me enseñó todo lo que no sabía. Lo recomiendo</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 col-xs-12 pt-4">
-                            <div class="testimonial">
-                                <img class="testimonial__img" src="./img/estudiante.png" alt="Testimonio Roxana" />
-                                <h3>Roxana Moscoso Torres</h3>
-                                <p>
-                                    No entendía absolutamente NADA en Matemática, y estaba con muy malas notas. Me tomaron clases dos veces por semana con G-Academy y ahora por fin estoy entendiendo y mejorando las notas
+                                    Gracias a la ayuda de G-Academy mi hijo mejoró mucho su rendimiento y terminó el año
+                                    con promedio 17. Tienen muy buenos profesores y entregan un gran servicio. Lo recomendaría 1000 veces.
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6 col-xs-12 pt-4">
                             <div class="testimonial">
-                                <img class="testimonial__img" src="./img/estudiante.png" alt="Testimonio Esperanza" />
-                                <h3>Esperanza de la Cruz Ruiz</h3>
+                                <img class="testimonial__img" src="./img/estudiante-juan.jpg" alt="Testimonio Juan" />
+                                <h3>Juan Velarde Lopez</h3>
                                 <p>
-                                    Gracias a la ayuda de G-Academy mi hijo mejoró mucho su rendimiento y terminó el año con promedio 17. Tienen muy buenos profesores y entregan un gran servicio
+                                    "Me fue muy agradable tomar este curso. Sabía muy poco de Internet, mandar mails y
+                                    del mundo digital, y realmente necesitaba una nivelación. Tomé las clases de
+                                    G-Academy y tuve un profesor joven muy agradable, quien con mucha
+                                    paciencia me enseñó todo lo que no sabía. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-xs-12 pt-4">
+                            <div class="testimonial">
+                                <img class="testimonial__img" src="./img/estudiante-roxana.jpg" alt="Testimonio Roxana" />
+                                <h3>Roxana Moscoso Torres</h3>
+                                <p>
+                                    No entendía absolutamente NADA en Matemática, y estaba con muy malas notas. Me
+                                    tomaron clases dos veces por semana con G-Academy y ahora por fin estoy entendiendo
+                                    y mejorando las notas
                                 </p>
                             </div>
                         </div>
@@ -198,5 +213,9 @@
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
             crossorigin="anonymous"
         ></script>
+        <script src="./js/wow.min.js"></script>
+        <script>
+            new WOW().init()
+        </script>
     </body>
 </html>
