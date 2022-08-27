@@ -5,7 +5,8 @@
   font-weight: bold;
   transition: all 0.5s; }
   .button:hover, .btn-primary:hover, .btn-secondary:hover {
-    opacity: 1.2; }
+    opacity: 1.2;
+    transform: scale(1.05); }
 
 .btn-primary {
   background-color: #9ec32e;
@@ -320,11 +321,6 @@ footer {
     .footer__subscribe__social a {
       color: #FFFFFF;
       padding: 0.5em; }
-
-.button--white {
-  background-color: #FFFFFF;
-  border: 0;
-  border-radius: 5px; }
 
 @media (max-width: 1024px) {
   header,
